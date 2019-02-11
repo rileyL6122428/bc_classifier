@@ -14,4 +14,13 @@ X = pd.DataFrame(
     columns=formatted_col_names
 )
 
-y = raw_data_set.target  # malignant -> 0, benign -> 1
+# malignant -> 0, benign -> 1
+y = pd.DataFrame(
+    data=raw_data_set.target,
+    columns=['label']
+)
+
+breast_cancer_df = pd.concat([X, y], axis=1)
+malignant = breast_cancer_df[breast_cancer_df.label == 0]
+benign = breast_cancer_df[breast_cancer_df.label == 1]
+
