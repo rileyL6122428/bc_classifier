@@ -1,7 +1,4 @@
 from load_data.breast_cancer_raw import X, y, breast_cancer_df, malignant, benign
-from matplotlib import pyplot as plt
-import numpy as np
-from pandas import Series
 from visualize_utils.draw_dispersion import draw_dispersion
 
 # mean_radii = X.mean_radius
@@ -19,7 +16,7 @@ from visualize_utils.draw_dispersion import draw_dispersion
 # print('MEDIAN MEAN RADIUS =', mean_radii.median())
 # print('85% QUANTILE MEAN RADIUS =', mean_radii.quantile(.85))
 # print('MAX MEAN RADIUS =', mean_radii.max())
-import pdb; pdb.set_trace()
+
 draw_dispersion(
     affirmative_series=benign.mean_radius,
     affirmative_label='Benign',

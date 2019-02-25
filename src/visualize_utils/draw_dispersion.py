@@ -9,7 +9,8 @@ def draw_dispersion(affirmative_series, negative_series, affirmative_label='', n
     plt.scatter(
         x=negative_series,
         y=np.zeros(negative_series.size),
-        marker='d'
+        marker='d',
+        alpha=0.1
     )
 
     plt.text(
@@ -63,7 +64,8 @@ def draw_dispersion(affirmative_series, negative_series, affirmative_label='', n
     plt.scatter(
         x=affirmative_series,
         y=np.ones(affirmative_series.size),
-        marker='d'
+        marker='d',
+        alpha=0.1
     )
 
     plt.text(
@@ -117,6 +119,11 @@ def draw_dispersion(affirmative_series, negative_series, affirmative_label='', n
 
     plt.legend((negative_label, affirmative_label))
     plt.title(title)
+    mng = plt.get_current_fig_manager()
+    # import pdb; pdb.set_trace()
+    # mng.full_screen_toggle()
+    # mng.full_screen_toggle()
+    mng.resize(800, 400)
     plt.show()
 
 # print(X[:5])
