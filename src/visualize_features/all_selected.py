@@ -1,5 +1,5 @@
 from load_data.breast_cancer_raw import formatted_col_names as feature_names, malignant, benign, breast_cancer_df
-from visualize_utils.draw_dispersion_by_class import draw_dispersion_by_class
+from visualize_utils.draw_class_dispersion import draw_dispersion_by_class
 from visualize_features.selected_features import selected_features
 
 for feature_name in feature_names:

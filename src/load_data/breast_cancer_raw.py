@@ -21,6 +21,10 @@ y = pd.DataFrame(
 )
 
 breast_cancer_df = pd.concat([X, y], axis=1)
+
+malignant_indices = breast_cancer_df.index[breast_cancer_df.label == 0].tolist()
 malignant = breast_cancer_df[breast_cancer_df.label == 0]
+
+benign_indices = breast_cancer_df.index[breast_cancer_df.label == 1].tolist()
 benign = breast_cancer_df[breast_cancer_df.label == 1]
 
