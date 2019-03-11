@@ -61,5 +61,8 @@ https://scikit-learn.org/stable/datasets/index.html#breast-cancer-wisconsin-diag
     * Try standard scaler and robust scaler
 - [ ] split data into train and test
 - [ ] build three classifiers
+    SVM
+    Logistic Regressor
+    K nearest Neighbors
 
 
